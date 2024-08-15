@@ -1,0 +1,408 @@
+/* Big Laptop Responsiveness */
+
+/* Navbar */
+
+.topnav
+{
+    padding: 40px 5%;
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar_big_laptop
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+
+}
+
+.navbar_big_laptop .left
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar_big_laptop .left .logo
+{
+    width: 45px;
+
+}
+
+.navbar_big_laptop .center
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.navbar_big_laptop .center h2
+{
+    cursor: pointer;
+    padding-bottom: 3px;
+    font-size: 19px;
+
+}
+
+.navbar_big_laptop .center .tap
+{
+    border-bottom: 2px solid white;
+    width: fit-content;
+
+}
+
+/* Image */
+
+.champions_big_laptop
+{
+    height: 85%;
+    width: 100%;
+    
+}
+
+/* Feedback */
+
+.feedback_big_laptop
+{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 5%;
+
+}
+
+.feedback_big_laptop:hover + .content_big_laptop
+{
+    display: block;
+}
+
+.content_big_laptop
+{
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: -195px;
+    margin-left: 9%;
+    position: absolute;
+    border: 2px solid white;
+    display: none;
+
+}
+
+/* News */
+
+.news_big_laptop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+
+}
+
+.news_big_laptop .heading_big_laptop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Small Laptop Responsiveness */
+/* Navbar */
+
+.topnav
+{
+    padding: 40px 5%;
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar_small_laptop
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+
+}
+
+.navbar_small_laptop .left
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar_small_laptop .left .logo
+{
+    width: 45px;
+
+}
+
+.navbar_small_laptop .center
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.navbar_small_laptop .center h2
+{
+    cursor: pointer;
+    padding-bottom: 3px;
+    font-size: 17px;
+
+}
+
+.navbar_small_laptop .center .tap
+{
+    border-bottom: 2px solid white;
+    width: fit-content;
+
+}
+
+/* Image */
+
+.champions_small_laptop
+{
+    height: 82%;
+    width: 100%;
+    
+}
+
+/* Feedback */
+
+.feedback_small_laptop
+{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 5%;
+
+}
+
+.feedback_small_laptop:hover + .content_small_laptop
+{
+    display: block;
+}
+
+.content_small_laptop
+{
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: -165px;
+    margin-left: 10%;
+    position: absolute;
+    border: 2px solid white;
+    display: none;
+
+}
+
+/* News */
+
+.news_small_laptop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+
+}
+
+.news_small_laptop .heading_small_laptop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+/* Tablet Responsiveness */
+/* Navbar */
+
+.topnav
+{
+    padding: 40px 5%;
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar_tablet
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+
+}
+
+.navbar_tablet .left
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar_tablet .left .logo
+{
+    width: 45px;
+
+}
+
+.navbar_tablet .center
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.navbar_tablet .center h2
+{
+    cursor: pointer;
+    padding-bottom: 3px;
+    font-size: 15px;
+
+}
+
+.navbar_tablet .center .tap
+{
+    border-bottom: 2px solid white;
+    width: fit-content;
+
+}
+
+/* Image */
+
+.champions_tablet
+{
+    height: 82%;
+    width: 100%;
+    
+}
+
+/* Feedback */
+
+.feedback_tablet
+{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 5%;
+
+}
+
+.feedback_tablet:hover + .content_tablet
+{
+    display: block;
+}
+
+.content_tablet
+{
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: -165px;
+    margin-left: 11.5%;
+    position: absolute;
+    border: 2px solid white;
+    display: none;
+
+}
+
+/* News */
+
+.news_tablet
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+
+}
+
+.news_tablet .heading_tablet
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}

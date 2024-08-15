@@ -1,0 +1,122 @@
+/* Navbar Section */
+
+.topnav
+{
+    padding: 40px 5%;
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar
+{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+
+}
+
+.navbar .left
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .left h2
+{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.navbar .logo
+{
+    width: 60px;
+    cursor: pointer;
+
+}
+
+.navbar .middle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+    
+}
+
+.navbar .middle h2
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    padding-bottom: 8px;
+    font-size: 18px;
+
+}
+
+.navbar .middle .tap
+{
+    border-bottom: 2px solid white;
+    width: fit-content;
+
+}
+
+/* Stadium Section */
+
+.david
+{
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* Feed_back Section */
+
+.feedback
+{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    width: fit-content;
+    font-size: 22px;
+    position: absolute;
+    margin: -210px 0 0 5%;
+
+}
+
+.feedback:hover + .content
+{
+    display: block;
+    
+}
+
+.content
+{
+    display: none;
+    
+}
+
+.content p
+{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: fit-content;
+    position: absolute;
+    margin: -200px 0 0 9%;
+    
+}
