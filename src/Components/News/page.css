@@ -1,5 +1,39 @@
 /* Big Laptop Screen Size Responsiveness */
 
+.head_popup
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    gap: 10px;
+    font-family: cursive;
+    width: 500px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 650px;
+
+}
+
+.popup h2
+{
+    font-size: 16.5px;
+
+}
+
 /* Navbar Section */
 
 .topnav
@@ -12,7 +46,7 @@
 
 .navbar
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     border: none;
     color: white;
     border-radius: 10px;
@@ -32,14 +66,14 @@
 
 .navbar .left h2
 {
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-family: cursive;
 
 }
 
 .navbar .logo
 {
-    width: 60px;
+    width: 90px;
     cursor: pointer;
 
 }
@@ -56,16 +90,16 @@
 
 .navbar .middle #h2
 {
-    font-size: 18px;
+    font-size: 15px;
     
 }
 
 .navbar .middle h2
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     cursor: pointer;
     padding-bottom: 6px;
-    font-size: 17px;
+    font-size: 15px;
 
 }
 
@@ -81,6 +115,7 @@
 .stadium
 {
     height: 100vh;
+    width: 100vw;
 
 }
 
@@ -88,11 +123,11 @@
 
 .feedback
 {
-    padding: 8px;
+    padding: 6px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     width: fit-content;
     font-size: 22px;
     position: absolute;
@@ -121,7 +156,7 @@
     cursor: pointer;
     border-radius: 5px;
     padding: 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     width: fit-content;
     position: absolute;
     margin: -160px 0 0 9%;
@@ -132,12 +167,14 @@
 
 .news_heading h2
 {
-    background-color: black;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: cursive;
+    font-size: 17px;
     cursor: pointer;
-    padding: 12px 5%;
+    padding: 10px 5%;
+    border-radius: 5px;
     margin-top: 2px;
 
 }
@@ -158,7 +195,7 @@
     height: 68vh;
     border: none;
     box-shadow: 0.5px 0.5px 20px black;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     margin-top: 60px;
     transition: 0.8s;
@@ -173,7 +210,7 @@
 
 .news .img1
 {
-    border-radius: 5px 5px 0 0;
+    border-radius: 25px 25px 0 0;
     height: 75%;
     width: 100%;
 
@@ -185,20 +222,20 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 17px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-family: cursive;
     padding: 5px 15px;
 
 }
 
 .news #headline
 {
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     
 }
 
@@ -213,9 +250,9 @@
 {
     padding: 6px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     width: fit-content;
     font-size: 20px;
     position: absolute;
@@ -244,7 +281,7 @@
     cursor: pointer;
     border-radius: 5px;
     padding: 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     width: fit-content;
     position: absolute;
     margin: -160px 0 0 9%;
@@ -255,12 +292,14 @@
 
 .news_heading_small h2
 {
-    background-color: black;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 19px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: 17px;
     cursor: pointer;
-    padding: 12px 5%;
+    padding: 10px 5%;
     margin-top: 2px;
 
 }
@@ -278,7 +317,7 @@
 
 .navbar_tablet
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     border: none;
     color: white;
     border-radius: 10px;
@@ -298,14 +337,14 @@
 
 .navbar_tablet .left h2
 {
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-family: cursive;
 
 }
 
 .navbar_tablet .logo
 {
-    width: 60px;
+    width: 90px;
     cursor: pointer;
 
 }
@@ -322,10 +361,10 @@
 
 .navbar_tablet .middle h2
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     cursor: pointer;
     padding-bottom: 6px;
-    font-size: 17px;
+    font-size: 15px;
 
 }
 
@@ -341,6 +380,7 @@
 .stadium
 {
     height: 100vh;
+    width: 100vw;
 
 }
 
@@ -350,9 +390,9 @@
 {
     padding: 6px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     width: fit-content;
     font-size: 20px;
     position: absolute;
@@ -381,10 +421,10 @@
     cursor: pointer;
     border-radius: 5px;
     padding: 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     width: fit-content;
     position: absolute;
-    margin: -160px 0 0 9%;
+    margin: -160px 0 0 10%;
     
 }
 
@@ -392,56 +432,17 @@
 
 .news_heading_tablet h2
 {
-    background-color: black;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 19px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: 17px;
     cursor: pointer;
     padding: 12px 5%;
     margin-top: 2px;
 
 }
-
-/* News_Tablet */
-
-/* .news_flex_tablet
-{
-    display: flex;
-    padding: 5px 5%;
-    gap: 5%;
-}
-
-.news_tablet
-{
-    width: 100%;
-    height: 68vh;
-    border: none;
-    box-shadow: 0.5px 0.5px 20px black;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 60px;
-
-}
-
-.news_tablet .img1
-{
-    border-radius: 5px 5px 0 0;
-    height: 75%;
-    width: 100%;
-
-}
-
-.news_tablet .headline
-{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 5px 15px;
-
-} */
 
 .news_flex_tablet
 {
@@ -478,7 +479,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     padding: 10px 6px;
     background-color: white;
     border: none;
@@ -487,6 +488,40 @@
 }
 
 /* Phone Responsiveness */
+
+.head_popup_phone
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup_phone
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    gap: 10px;
+    font-family: cursive;
+    width: 300px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 850px;
+
+}
+
+.popup_phone h2
+{
+    font-size: 16.5px;
+
+}
 
 /* Navbar */
 
@@ -500,12 +535,12 @@
 
 .navbar_phone
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     border: none;
     border-radius: 5px;
     padding: 12px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     display: flex;
     width: 100%;
     align-items: center;
@@ -514,7 +549,7 @@
 
 .navbar_phone .left .logo_phone
 {
-    width: 45px;
+    width: 85px;
 
 }
 
@@ -527,7 +562,7 @@
 
 .navbar_phone .left h2
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     font-size: 19px;
 
 }
@@ -554,8 +589,8 @@
 .navbar_phone .right .dropdown_phone
 {
     position: absolute;
-    background-color: black;
-    margin-left: -32px;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin-left: -40px;
     border: 2px solid white;
     border-radius: 5px;
     cursor: pointer;
@@ -565,7 +600,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     position: fixed;
     box-shadow: 0.5px 0.5px 20px black;
 
@@ -573,8 +608,9 @@
 
 .navbar_phone .right .dropdown_phone h2
 {
-    border: 2px solid black;
+    border: 2px solid transparent;
     width: 100%;
+    font-size: 15px;
     padding: 3px;
 
 }
@@ -592,7 +628,7 @@
 
 .stadium_phone
 {
-    height: 93vh;
+    height: 80vh;
 
 }
 
@@ -601,9 +637,9 @@
 {
     padding: 6px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     width: fit-content;
     font-size: 20px;
     position: absolute;
@@ -632,20 +668,22 @@
     cursor: pointer;
     border-radius: 5px;
     padding: 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     width: fit-content;
     position: absolute;
-    margin: -160px 0 0 14%;
+    margin: -160px 0 0 15%;
     
 }
 
 /* News Heading */
 .news_heading_phone
 {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
     padding: 10px 5%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     cursor: pointer;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
@@ -664,20 +702,22 @@
 .news_phone .left_news_phone 
 {
     box-shadow: 0.5px 0.5px 10px black;
-    border-radius: 10px;
+    border-radius: 40px;
+
 }
 
 .news_phone .left_news_phone .news_img_phone
 {
     border: none;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     cursor: pointer;
+    height: 250px;
 
 }
 
 .news_phone .left_news_phone .news_text_phone
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     padding: 15px 10px;
     border-radius: 0 0 10px 10px;
     cursor: pointer;
@@ -685,14 +725,14 @@
     background-color: white;
     text-align: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 
 .news_phone .right_news_phone 
 {
     box-shadow: 0.5px 0.5px 10px black;
-    border-radius: 10px;
+    border-radius: 40px;
     margin-top: 50px;
 
 }
@@ -700,14 +740,14 @@
 .news_phone .right_news_phone .news_img_phone
 {
     border: none;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     cursor: pointer;
 
 }
 
 .news_phone .right_news_phone .news_text_phone
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     padding: 15px 10px;
     border-radius: 0 0 10px 10px;
     cursor: pointer;
@@ -715,6 +755,6 @@
     background-color: white;
     text-align: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 15px;
 
 }

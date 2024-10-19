@@ -2,7 +2,7 @@
 
 .stadium
 {
-    height: 230%;
+    height: 390%;
     width: 100%;
     position: absolute;
 
@@ -20,7 +20,7 @@
 
 .navbar
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     border: none;
     color: white;
     border-radius: 10px;
@@ -40,14 +40,15 @@
 
 .navbar .left h2
 {
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-family: cursive;
 
 }
 
 .navbar .logo
 {
-    width: 60px;
+    /* width: 60px; */
+    width: 80px;
     cursor: pointer;
 
 }
@@ -64,10 +65,10 @@
 
 .navbar .middle h2
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     cursor: pointer;
     padding-bottom: 6px;
-    font-size: 17px;
+    font-size: 15px;
 
 }
 
@@ -82,11 +83,11 @@
 
 .feedback
 {
-    padding: 8px;
+    padding: 6px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     width: fit-content;
     font-size: 22px;
     position: fixed;
@@ -116,7 +117,7 @@
     cursor: pointer;
     border-radius: 5px;
     padding: 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     width: fit-content;
     position: fixed;
     /* margin: -160px 0 0 9%; */
@@ -143,6 +144,7 @@
 {
     /* margin-top: -1680px; */
     height: 703px;
+    margin-top: 50px;
     border-radius: 10px;
 
 }
@@ -155,15 +157,14 @@
 
 .moveTop p
 {
-    padding: 10px;
-    /* margin-top: -1480px; */
+    padding: 6px 10px;
     margin-top: 300px;
     position: fixed;
     font-size: 25px;
-    background-color: black;
-    width: 50px;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: fit-content;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 170px;
 
 }
@@ -171,7 +172,7 @@
 p
 {
     cursor: pointer;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     padding-bottom: 5px;
     font-size: 16px;
     margin-top: 10px;
@@ -181,14 +182,14 @@ p
 h2
 {
     cursor: pointer;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
 
 }
 
 h3
 {
     font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
 
 }
 
@@ -210,10 +211,10 @@ h3
 .madrid-head
 {
     display: flex;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     padding: 15px 10px;
     display: flex;
-    border-radius: 10px 10px 0 0;
+    border-radius: 30px 30px 0 0;
     text-align: center;
     align-items: center;
 
@@ -222,47 +223,53 @@ h3
 .madrid-head h2
 {
     color: white;
+    font-size: 19px;
 
 }
 
 .name
 {
     width: 350px;
-    font-size: 18px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .position
 {
     width: 140px;
-    font-size: 18px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .age
 {
     width: 90px;
-    font-size: 18px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .height
 {
     width: 70px;
-    font-size: 18px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .weight
 {
     width: 90px;
-    font-size: 18px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .data-head
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     width: 740px;
     color: white;
     padding: 15px;
@@ -273,7 +280,7 @@ h3
 .one
 {
     width: 740px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     color: white;
     display: flex;
     padding: 15px 15px;
@@ -285,8 +292,14 @@ h3
 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 7px;
     width: 350px;
+
+}
+
+.player-name h3
+{
+    font-size: 15px;
 
 }
 
@@ -308,31 +321,35 @@ h3
 
 .play:hover
 {
-    transform: scale(1.1);
+    transform: scale(0.95);
     transition: all 0.7s ease;
 }
 
 .play-pst
 {
     width: 140px;
+    font-size: 15px;
 
 }
 
 .play-age
 {
     width: 90px;
+    font-size: 15px;
 
 }
 
 .play-height
 {
     width: 70px;
+    font-size: 15px;
 
 }
 
 .play-width
 {
     width: 90px;
+    font-size: 15px;
 
 }
 
@@ -354,12 +371,11 @@ h3
 
 .btn
 {
-    background-color: black;
-    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.459);
+    border: 2px solid transparent;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    font-family: cursive;
+    font-size: 14px;
     border-radius: 5px;
     padding: 13px 20px;
     display: flex;
@@ -373,12 +389,11 @@ h3
 
 .btn-2
 {
-    background-color: black;
-    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.459);
+    border: 2px solid transparent;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    font-family: cursive;
+    font-size: 14px;
     border-radius: 5px;
     padding: 13px 20px;
     display: flex;
@@ -392,21 +407,17 @@ h3
 
 .btn:hover
 {
-    background-color: white;
     transition: all 0.8s ease;
-    color: black;
-    border: 2px solid black;
-    transform: scale(0.98);
+    border: 2px solid white;
+    transform: scale(0.94);
 
 }
 
 .btn-2:hover
 {
-    background-color: white;
     transition: all 0.8s ease;
-    color: black;
-    border: 2px solid black;
-    transform: scale(0.98);
+    border: 2px solid white;
+    transform: scale(0.94);
 
 }
 
@@ -418,1060 +429,127 @@ h3
 
 }
 
-/* Small Laptop Responsiveness */
-/* Stadium */
+/* small_laptop */
 
-.stadium_small_laptop
+/* Feed_back Section */
+
+.feedback_small
 {
-    height: 230%;
-    width: 100%;
-    position: absolute;
-
-}
-
-/* Navbar */
-
-.topnav_small_laptop
-{
-    padding: 40px 5%;
-    position: relative;
-    width: 100%;
-
-}
-
-.navbar_small_laptop
-{
-    background-color: black;
+    padding: 6px;
     border: none;
-    color: white;
     border-radius: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 12px;
-
-}
-
-.navbar_small_laptop .left
-{
-    display: flex;
-    align-items: center;
-
-}
-
-.navbar_small_laptop .left h2
-{
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.navbar_small_laptop .logo
-{
-    width: 60px;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: fit-content;
+    font-size: 22px;
+    position: fixed;
+    margin-top: 320px;
+    margin-left: -8%;
 
 }
 
-.navbar_small_laptop .middle
+.feedback_small:hover + .content
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: auto;
+    display: block;
     
 }
 
-.navbar_small_laptop .middle h2
+.content
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: pointer;
-    padding-bottom: 6px;
-    font-size: 17px;
-
-}
-
-.navbar_small_laptop .middle .tap
-{
-    border-bottom: 2px solid white;
-    width: fit-content;
-
-} 
-
-.ctn_small_laptop
-{
-    position: absolute;
-
-}
-
-.logo_small_laptop
-{
-    width: 55px;
-
-}
-
-.baba_small_laptop
-{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.ctn_small_laptop
-{
-    background-color: black;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-    display: flex;
-    align-items: center;
-    margin: 10px 5%;
-    width: 90%;
-
-}
-
-.ctn_small_laptop h2
-{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: 19px;
-
-}
-
-.info_small_laptop
-{
-    background-color: black;
-    border-top: 2px solid white;
-    color: white;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin: 75px 5%;
-    width: 90%;
-    gap: 40px;
-    padding: 10px;
-
-}
-
-.info_small_laptop h2
-{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-
-}
-
-.info_small_laptop .pst_small_laptop
-{
-    margin-left: 500px;
-
-}
-
-/* .info_small_laptop .ag_small_laptop
-{
-    margin-left: 45px;
-
-}
-
-.info_small_laptop .ht_small_laptop
-{
-    margin-left: 30px;
-
-}
-
-.info_small_laptop .wt_small_laptop
-{
-    margin-left: 35px;
-
-} */
-
-.luka_modric_small_laptop .name_small_laptop
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.modric_img_small_laptop
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.modric_img_small_laptop:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.luka_modric_small_laptop
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 120px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.luka_modric_small_laptop .position_small_laptop
-{
-    margin-left: 345px;
-
-}
-
-/* Toni_Kroos */
-
-.toni_kroos_small_laptop .name_small_laptop
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.toni_kroos_img_small_laptop
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.toni_kroos_img_small_laptop:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.toni_kroos_small_laptop
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 190px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.toni_kroos_small_laptop .position_small_laptop
-{
-    margin-left: 360px;
-
-}
-
-/* David_Alaba */
-
-.david_alaba_small_laptop .name_small_laptop
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.david_alaba_img_small_laptop
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.david_alaba_img_small_laptop:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.david_alaba_small_laptop
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 260px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.david_alaba_small_laptop .position_small_laptop
-{
-    margin-left: 360px;
-
-}
-
-/* Nacho */
-
-.nacho_small_laptop .name_small_laptop
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.nacho_img_small_laptop
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.nacho_img_small_laptop:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.nacho_small_laptop
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 330px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.nacho_small_laptop .position_small_laptop
-{
-    margin-left: 395px;
-
-}
-
-/* Mato Joselu */
-.mato_joselu_small_laptop .name_small_laptop
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.mato_joselu_img_small_laptop
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.mato_joselu_img_small_laptop:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.mato_joselu_small_laptop
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 400px 5%;
-    gap: 43px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.mato_joselu_small_laptop .position_small_laptop
-{
-    margin-left: 354px;
-
-}
-
-/* Thibaut Courtois */
-
-.thibaut_courtois_small_laptop .name_small_laptop
-{
-    display: flex;
-    align-items: center;
-    gap: 13px;
-
-}
-
-.thibaut_courtois_img_small_laptop
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.thibaut_courtois_img_small_laptop:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.thibaut_courtois_small_laptop
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 470px 5%;
-    gap: 30px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.thibaut_courtois_small_laptop .position_small_laptop
-{
-    margin-left: 325px;
-
-}
-
-.thibaut_courtois_small_laptop .height_small_laptop
-{
-    margin-left: 12px;
-
-}
-
-.thibaut_courtois_small_laptop .weight_small_laptop
-{
-    margin-left: 10px;
-
-}
-
-.see_more_small_laptop
-{
-    margin-top: 540px;
-    margin-left:50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background-color: black;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: 0.7s;
-
-}
-
-.see_more_small_laptop:hover
-{
-    color: black;
-    background-color: white;
-    border: 2px solid transparent;
-    transition: all 0.7s;
-
-}
-
-.see_more_small_laptop:active
-{
-    background-color: black;
-    color: white;
-    transform: scale(0.98);
-
-}
-
-/* Tablet Responsiveness */
-/* Stadium */
-
-.stadium_tablet
-{
-    height: 230%;
-    width: 100%;
-    position: absolute;
-
-}
-
-/* Navbar */
-
-.topnav_tablet
-{
-    padding: 40px 5%;
-    position: relative;
-    width: 100%;
-
-}
-
-.navbar_tablet
-{
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 12px;
-
-}
-
-.navbar_tablet .left
-{
-    display: flex;
-    align-items: center;
-
-}
-
-.navbar_tablet .left h2
-{
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.navbar_tablet .logo
-{
-    width: 60px;
-    cursor: pointer;
-
-}
-
-.navbar_tablet .middle
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: auto;
+    display: none;
     
 }
 
-.navbar_tablet .middle h2
+.content p
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: pointer;
-    padding-bottom: 6px;
-    font-size: 17px;
-
-}
-
-.navbar_tablet .middle .tap
-{
-    border-bottom: 2px solid white;
-    width: fit-content;
-
-} 
-
-.ctn_tablet
-{
-    position: absolute;
-
-}
-
-.logo_tablet
-{
-    width: 55px;
-
-}
-
-.baba_tablet
-{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.ctn_tablet
-{
+    font-size: 12px;
     background-color: black;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-    display: flex;
-    align-items: center;
-    margin: 10px 5%;
-    width: 90%;
-
-}
-
-.ctn_tablet h2
-{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    font-size: 19px;
-
-}
-
-.info_tablet
-{
-    background-color: black;
-    border-top: 2px solid white;
-    color: white;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin: 75px 5%;
-    width: 90%;
-    gap: 40px;
-    padding: 10px;
-
-}
-
-.info_tablet h2
-{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-
-}
-
-.info_tablet .pst_tablet
-{
-    margin-left: 300px;
-
-}
-
-/* .info_tablet .ag_tablet
-{
-    margin-left: 45px;
-
-}
-
-.info_tablet .ht_tablet
-{
-    margin-left: 30px;
-
-}
-
-.info_tablet .wt_tablet
-{
-    margin-left: 35px;
-
-} */
-
-.luka_modric_tablet .name_tablet
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.modric_img_tablet
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.modric_img_tablet:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.luka_modric_tablet
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 120px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.luka_modric_tablet .position_tablet
-{
-    margin-left: 145px;
-
-}
-
-/* Toni_Kroos */
-
-.toni_kroos_tablet .name_tablet
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.toni_kroos_img_tablet
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.toni_kroos_img_tablet:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.toni_kroos_tablet
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 190px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.toni_kroos_tablet .position_tablet
-{
-    margin-left: 160px;
-
-}
-
-/* David_Alaba */
-
-.david_alaba_tablet .name_tablet
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.david_alaba_img_tablet
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.david_alaba_img_tablet:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.david_alaba_tablet
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 260px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.david_alaba_tablet .position_tablet
-{
-    margin-left: 160px;
-
-}
-
-/* Nacho */
-
-.nacho_tablet .name_tablet
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.nacho_img_tablet
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.nacho_img_tablet:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.nacho_tablet
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 330px 5%;
-    gap: 40px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.nacho_tablet .position_tablet
-{
-    margin-left: 195px;
-
-}
-
-/* Mato Joselu */
-.mato_joselu_tablet .name_tablet
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.mato_joselu_img_tablet
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.mato_joselu_img_tablet:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.mato_joselu_tablet
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 400px 5%;
-    gap: 43px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.mato_joselu_tablet .position_tablet
-{
-    margin-left: 154px;
-
-}
-
-/* Thibaut Courtois */
-
-.thibaut_courtois_tablet .name_tablet
-{
-    display: flex;
-    align-items: center;
-    gap: 13px;
-
-}
-
-.thibaut_courtois_img_tablet
-{
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.7s;
-
-}
-
-.thibaut_courtois_img_tablet:hover
-{
-    transform: scale(1.1);
-    transition: all 0.7s;
-
-}
-
-.thibaut_courtois_tablet
-{
-    background-color: black;
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 2px solid white;
-    margin: 470px 5%;
-    gap: 30px;
-    width: 90%;
-    font-size: 17px;
-
-}
-
-.thibaut_courtois_tablet .position_tablet
-{
-    margin-left: 125px;
-
-}
-
-.thibaut_courtois_tablet .height_tablet
-{
-    margin-left: 12px;
-
-}
-
-.thibaut_courtois_tablet .weight_tablet
-{
-    margin-left: 10px;
-
-}
-
-.see_more_tablet
-{
-    margin-top: 540px;
-    margin-left: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background-color: black;
     border: 2px solid white;
-    padding: 5px;
-    border-radius: 5px;
     cursor: pointer;
-    color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: 0.7s;
-
+    border-radius: 5px;
+    padding: 3px;
+    font-family: cursive;
+    width: fit-content;
+    position: fixed;
+    /* margin: -160px 0 0 9%; */
+    margin: 330px -13%;
+    
 }
 
-.see_more_tablet:hover
+/* moveTop */
+.moveTop_small p
 {
-    color: black;
-    background-color: white;
-    border: 2px solid transparent;
-    transition: all 0.7s;
+    padding: 6px 10px;
+    margin-top: 300px;
+    position: fixed;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
 
 }
 
-.see_more_tablet:active
+p
 {
-    background-color: black;
-    color: white;
-    transform: scale(0.98);
+    cursor: pointer;
+    font-family: cursive;
+    padding-bottom: 5px;
+    font-size: 15px;
+    margin-top: 10px;
 
 }
 
-/* Phone Responsiveness */
+/* phone responsiveness */
 
 /* Navbar */
+
 .topnav_phone
 {
     margin: 40px 5%;
-    position: absolute;
+    position: fixed;
     width: 90%;
+    
+}
+
+.navbar_phone
+{
+    background-color: rgba(0, 0, 0, 0.459);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-family: cursive;
+    display: flex;
+    width: 100%;
+    align-items: center;
 
 }
 
-.topnav_phone .navbar
+.navbar_phone .left .logo_phone
+{
+    width: 85px;
+
+}
+
+.navbar_phone .left
 {
     display: flex;
     align-items: center;
 
 }
 
-.topnav_phone .navbar .left
+.navbar_phone .left h2
 {
-    display: flex;
-    align-items: center;
+    font-family: cursive;
+    font-size: 17px;
 
 }
 
-.topnav_phone .navbar .left h2
+.navbar_phone .right
 {
-    font-size: 20px;
-
-}
-
-.topnav_phone .navbar .right
-{
-    display: flex;
     margin-left: auto;
 
 }
@@ -1483,154 +561,181 @@ h3
     
 }
 
-.topnav_phone .navbar .right .dropdown_phone
+.navbar_phone .right .dropdown_icon_phone
 {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: black;
-    box-shadow: 0.5px 0.5px 25px black;
-    border: 2px solid white;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: -30px;
+    cursor: pointer;
 
 }
 
-.topnav_phone .navbar .right .dropdown_phone h2
+.navbar_phone .right .dropdown_phone
 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin-left: -40px;
+    border: 2px solid white;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 3px;
-    width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 3px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: cursive;
+    position: fixed;
+    box-shadow: 0.5px 0.5px 20px black;
+
+}
+
+.navbar_phone .right .dropdown_phone h2
+{
+    border: 2px solid transparent;
+    width: 100%;
+    font-size: 14px;
+    padding: 3px;
 
 }
 
 .tap_phone
 {
-    color: black;
     background-color: white;
+    color: black;
+    width: 100%;
+    border: 2px solid black;
 
 }
 
-/* Stadium */
+/* stadium */
+
 .stadium_phone
 {
+    width: 100%;
     height: 200vh;
 
 }
 
-/* Players */
-.players_details_phone
+/* baba */
+.baba_phone
 {
-    position: absolute;
-    margin: 240px 5%;
-    width: 90%;
-
-}
-
-.players_details_phone .heading
-{
-    display: flex;
-    background-color: black;
-    color: white;
-    font-size: 19px;
-    align-items: center;
-    padding: 5px;
-    border: none;
-    border-radius: 10px 10px 0 0;
-
-}
-
-.players_details_phone .heading .logo_phone
-{
-    width: 60px;
-
-}
-
-.players_details_phone .details
-{
-    background-color: black;
-    padding: 2px;
-
-}
-
-.players_details_phone .details .player_phone
-{
-    display: flex;
-    color: white;
-    border-top: 2px solid white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    gap: 40px;
-    padding: 8px;
-    align-items: center;
-
-}
-
-.players_details_phone .details .player_phone .name
-{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
-}
-
-.players_details_phone .details .player_phone .img_phone
-{
-    width: 45px;
-    border: none;
-    border-radius: 50%;
-    transition: 0.8s;
-    cursor: pointer;
-
-}
-
-.players_details_phone .details .player_phone .img_phone:hover
-{
-    transform: scale(0.97);
-    transition: all 0.8s ease;
-
-}
-
-.players_details_phone .details .player_phone .position
-{
-    margin-left: auto;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-
-}
-
-.see_more_phone
-{
-    position: absolute;
-    background-color: black;
-    padding: 8px;
-    border: 2px solid white;
-    cursor: pointer;
-    color: whitesmoke;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -5px;
-    transition: 0.8s;
-    margin-left: 45%;
+    margin-top: -1130px;
+
+}
+
+/* players */
+
+.head-1_phone
+{
+    width: 325px;
+
+}
+
+.madrid-head_phone
+{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 15px 10px;
+    display: flex;
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+    align-items: center;
+
+}
+
+.madrid-head_phone h2
+{
+    color: white;
+    font-family: cursive;
+
+}
+
+.data-head_phone
+{
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 325px;
+    color: white;
+    padding: 15px;
+    display: flex;
+
+}
+
+.data-head_phone .name
+{
+    font-size: 15px;
+
+}
+
+.data-head_phone .position
+{
+    font-size: 15px;
+    
+}
+
+.one_phone
+{
+    width: 325px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    display: flex;
+    padding: 15px 15px;
+    align-items: center;
+
+}
+
+/* player-name */
+
+.player-name_phone
+{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 350px;
+
+}
+
+.player-name_phone h3
+{
+    font-size: 14px;
+
+}
+
+.play
+{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.7s;
+    
+}
+
+.play:hover
+{
+    transform: scale(0.95);
+    transition: all 0.7s ease;
+}
+
+.play-pst_phone
+{
+    width: 140px;
+    font-size: 14px;
+
+}
+
+.ctn_phone
+{
+    height: 703px;
+    margin-top: 60px;
     border-radius: 10px;
 
 }
 
-.see_more_phone:active
+.flex_phone
 {
-    background-color: white;
-    border: 2px solid white;
-    color: black;
-    transition: all 0.8s ease;
-    transform: scale(0.97);
+    display: flex;
+    justify-content: center;
 
 }

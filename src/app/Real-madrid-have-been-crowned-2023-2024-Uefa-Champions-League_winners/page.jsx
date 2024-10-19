@@ -3,7 +3,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
-import logo from './Image/madrid-logo-black.jpeg'
+import logo from './Image/madrid_icon.png'
 import champions from './Image/champions.webp'
 import './page.css'
 import Link from 'next/link'
@@ -62,207 +62,183 @@ const page = () => {
 
   }
 
+  const [dropdown, setDropdown] = useState(false)
+
+  const handleDropdown = () => {
+    setDropdown(!dropdown)
+  }
+
   return (
     <div>
 
-      {/* Big Laptop Responsiveness */}
-      <div className='hidden md:hidden lg:hidden xl:block'>
+      {/* Big Screen Responsiveness */}
+      <div className='hidden md:block sm:block lg:block'>
 
         {/* Navbar */}
-
         <div className="topnav">
-          <div className="navbar_big_laptop">
 
-            <Link className='left' href="/">
+          <div className="navbar">
+            <Link href="/">
+
               <div className="left">
                 <h2>Real Madrid</h2>
-                <Image className='logo' src={logo} alt='' />
+                <Image className='logo' src={logo} width={300} alt='' />
               </div>
             </Link>
 
-            <div className="center">
+            <div className="middle">
               <Link href="/">
-                <h2 onClick={handleClick1} className={click1 === true ? ('tap') : ''}>News</h2>
+                <h2 onClick={handleClick1} id='h2' className={click1 === true ? ('tap') : ''}>News</h2>
               </Link>
-              <h2 onClick={handleClick2} className={click2 === true ? ('tap') : ''}>Fixtures</h2>
-              <h2 onClick={handleClick3} className={click3 === true ? ('tap') : ''}>Standings</h2>
+
+              <Link href="https://www.livescore.com/en/football/team/real-madrid/4009/fixtures/">
+                <h2 onClick={handleClick2} id='h2' className={click2 === true ? ('tap') : ''}>Fixtures</h2>
+              </Link>
+
+              <h2 onClick={handleClick3} id='h2' className={click3 === true ? ('tap') : ''}>Standings</h2>
+
               <Link href="Play">
-                <h2 onClick={handleClick4} className={click4 === true ? ('tap') : ''}>Players</h2>
+                <h2 onClick={handleClick4} id='h2' className={click4 === true ? ('tap') : ''}>Players</h2>
               </Link>
             </div>
           </div>
         </div>
 
-        {/* Image */}
-
+        {/* Background-Image */}
         <div>
-          <Image className='champions_big_laptop' src={champions} alt='' />
+          <Image className='stadium' src={champions} alt='' />
         </div>
 
-        {/* Feedback */}
-
+        {/* feedback */}
         {notlike === true &&
-          <div onClick={handleLike}>
-            <p className='feedback_big_laptop'>🤍</p>
+        <div onClick={handleLike}>
+            <p className='feedback'>🤍</p>
 
-            <div className='content_big_laptop'>
-              <p>more content like this</p>
+            <div className='content'>
+            <p>more content like this</p>
             </div>
-          </div>
+        </div>
         }
 
         {like === true &&
-          <div onClick={handleNotlike}>
-            <p className='feedback_big_laptop'>💗</p>
+        <div onClick={handleNotlike}>
+            <p className='feedback'>💗</p>
 
-            <div className='content_big_laptop'>
-              <p>thanks for the likes</p>
+            <div className='content'>
+            <p>thanks for the likes</p>
             </div>
-          </div>
+        </div>
         }
 
         {/* News */}
 
         <div className='news_big_laptop'>
           <div className="heading_big_laptop">
-            <h2>Real Madrid have been crowned the 2023/2024 UEFA Champions League Winners</h2>
+            <h1>Real Madrid have been crowned the 2023/2024 UEFA Champions League Winners</h1>
+
+            <p>Beating Borussia Dortmund 2 - 0 in a final Carvajal, Vinicius Jr. score for Los Merengues at Wembley</p>
+
+            <h3>Real Madrid won the 2024 UEFA Champions League trophy Saturday by blanking Borussia Dortmund 2 - 0 in the final.</h3>
+
+            <h3>Spanish defender Dani Carvajal and Brazilian attacker Vinicius Jr. scored for Los Merengues in the 74th and 83rd minutes, respectively, at Wembley Stadium.</h3>
+
+            <h3>Dortmund's German striker Niclas Fullkrug missed a chance for the lead by aiming his shot at the crossbar in the 23rd minute. Fullkrug missed another chance to score in the 87th minute as the Video Assistant Referee (VAR) disallowed his goal because of an offside.</h3>
+
+            <h3>Dortmund's Swiss goalie Gregor Kobel made vital saves during the match to keep his team alive but could not prevent Real Madrid from clinching their 15th Champions League title.</h3>
+
+            <h3>UEFA Champions League record holders Real Madrid won their sixth trophy in the last 10 years.</h3>
+
+            <h3>Arda Guler became the first Turkish footballer to win a UEFA Champions League trophy.</h3>
           </div>
 
-          <div className="body_big_laptop"></div>
         </div>
       </div>
 
-      {/* Small Laptop Responsiveness */}
-      <div className='hidden md:hidden lg:block xl:hidden'>
+      {/* phone screen reponsiveness */}
+      <div className='block md:hidden sm:hidden lg:hidden'>
 
         {/* Navbar */}
+        <div className="topnav_phone">
 
-        <div className="topnav">
-          <div className="navbar_small_laptop">
+          <div className="navbar_phone">
 
-            <Link className='left' href="/">
-              <div className="left">
-                <h2>Real Madrid</h2>
-                <Image className='logo' src={logo} alt='' />
-              </div>
+            <Link href="/">
+            <div className="left">
+            <h2>Real Madrid</h2>
+            <Image className='logo_phone' src={logo} alt='' />
+            </div>
             </Link>
 
-            <div className="center">
-              <Link href="/">
-                <h2 onClick={handleClick1} className={click1 === true ? ('tap') : ''}>News</h2>
-              </Link>
-              <h2 onClick={handleClick2} className={click2 === true ? ('tap') : ''}>Fixtures</h2>
-              <h2 onClick={handleClick3} className={click3 === true ? ('tap') : ''}>Standings</h2>
-              <Link href="Play">
-                <h2 onClick={handleClick4} className={click4 === true ? ('tap') : ''}>Players</h2>
-              </Link>
+            <div className="right">
+            <p className='dropdown_icon_phone' onClick={handleDropdown}>▼</p>
+
+            {dropdown === true &&
+                <div className="dropdown_phone">
+                <Link href="/" className={click1 === true ? ('tap_phone') : ''}>
+                    <h2 onClick={handleClick1} className={click1 === true ? ('tap_phone') : ''}>News</h2>
+                </Link>
+                <Link href="https://www.livescore.com/en/football/team/real-madrid/4009/fixtures/">
+                    <h2 onClick={handleClick2} className={click2 === true ? ('tap_phone') : ''}>Fixtures</h2>
+                </Link>
+                <h2 onClick={handleClick3} className={click3 === true ? ('tap_phone') : ''}>Standings</h2>
+                <Link href="Play" className={click4 === true ? ('tap_phone') : ''}>
+                    <h2 onClick={handleClick4} className={click4 === true ? ('tap_phone') : ''}>Players</h2>
+                </Link>
+                </div>
+            }
             </div>
+
           </div>
+
         </div>
 
-        {/* Image */}
-
+        {/* Background-Image */}
         <div>
-          <Image className='champions_small_laptop' src={champions} alt='' />
+          <Image className='stadium_phone' src={champions} alt='' />
         </div>
 
-        {/* Feedback */}
-
+        {/* feedback */}
         {notlike === true &&
-          <div onClick={handleLike}>
-            <p className='feedback_small_laptop'>🤍</p>
+        <div onClick={handleLike}>
+            <p className='feedback_phone'>🤍</p>
 
-            <div className='content_small_laptop'>
-              <p>more content like this</p>
+            <div className='content_phone'>
+            <p>more content like this</p>
             </div>
-          </div>
+        </div>
         }
 
         {like === true &&
-          <div onClick={handleNotlike}>
-            <p className='feedback_small_laptop'>💗</p>
+        <div onClick={handleNotlike}>
+            <p className='feedback_phone'>💗</p>
 
-            <div className='content_small_laptop'>
-              <p>thanks for the likes</p>
+            <div className='content_phone'>
+            <p>thanks for the likes</p>
             </div>
-          </div>
+        </div>
         }
 
         {/* News */}
 
-        <div className='news_small_laptop'>
-          <div className="heading_small_laptop">
-            <h2>Real Madrid have been crowned the 2023/2024 UEFA Champions League Winners</h2>
+        <div className='news_big_laptop'>
+          <div className="heading_big_laptop">
+            <h1>Real Madrid have been crowned the 2023/2024 UEFA Champions League Winners</h1>
+
+            <p>Beating Borussia Dortmund 2 - 0 in a final Carvajal, Vinicius Jr. score for Los Merengues at Wembley</p>
+
+            <h3>Real Madrid won the 2024 UEFA Champions League trophy Saturday by blanking Borussia Dortmund 2 - 0 in the final.</h3>
+
+            <h3>Spanish defender Dani Carvajal and Brazilian attacker Vinicius Jr. scored for Los Merengues in the 74th and 83rd minutes, respectively, at Wembley Stadium.</h3>
+
+            <h3>Dortmund's German striker Niclas Fullkrug missed a chance for the lead by aiming his shot at the crossbar in the 23rd minute. Fullkrug missed another chance to score in the 87th minute as the Video Assistant Referee (VAR) disallowed his goal because of an offside.</h3>
+
+            <h3>Dortmund's Swiss goalie Gregor Kobel made vital saves during the match to keep his team alive but could not prevent Real Madrid from clinching their 15th Champions League title.</h3>
+
+            <h3>UEFA Champions League record holders Real Madrid won their sixth trophy in the last 10 years.</h3>
+
+            <h3>Arda Guler became the first Turkish footballer to win a UEFA Champions League trophy.</h3>
           </div>
 
-          <div className="body_small_laptop"></div>
-        </div>
-      </div>
-
-      {/* Tablet Responsiveness */}
-      <div className='hidden md:block lg:hidden xl:hidden'>
-
-        {/* Navbar */}
-
-        <div className="topnav">
-          <div className="navbar_tablet">
-
-            <Link className='left' href="/">
-              <div className="left">
-                <h2>Real Madrid</h2>
-                <Image className='logo' src={logo} alt='' />
-              </div>
-            </Link>
-
-            <div className="center">
-              <Link href="/">
-                <h2 onClick={handleClick1} className={click1 === true ? ('tap') : ''}>News</h2>
-              </Link>
-              <h2 onClick={handleClick2} className={click2 === true ? ('tap') : ''}>Fixtures</h2>
-              <h2 onClick={handleClick3} className={click3 === true ? ('tap') : ''}>Standings</h2>
-              <Link href="Play">
-                <h2 onClick={handleClick4} className={click4 === true ? ('tap') : ''}>Players</h2>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Image */}
-
-        <div>
-          <Image className='champions_tablet' src={champions} alt='' />
-        </div>
-
-        {/* Feedback */}
-
-        {notlike === true &&
-          <div onClick={handleLike}>
-            <p className='feedback_tablet'>🤍</p>
-
-            <div className='content_tablet'>
-              <p>more content like this</p>
-            </div>
-          </div>
-        }
-
-        {like === true &&
-          <div onClick={handleNotlike}>
-            <p className='feedback_tablet'>💗</p>
-
-            <div className='content_tablet'>
-              <p>thanks for the likes</p>
-            </div>
-          </div>
-        }
-
-        {/* News */}
-
-        <div className='news_tablet'>
-          <div className="heading_tablet">
-            <h2>Real Madrid have been crowned the 2023/2024 UEFA Champions League Winners</h2>
-          </div>
-
-          <div className="body_tablet"></div>
         </div>
       </div>
       

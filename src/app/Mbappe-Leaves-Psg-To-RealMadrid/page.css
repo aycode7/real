@@ -10,7 +10,7 @@
 
 .navbar
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     border: none;
     color: white;
     border-radius: 10px;
@@ -30,14 +30,14 @@
 
 .navbar .left h2
 {
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-family: cursive;
 
 }
 
 .navbar .logo
 {
-    width: 60px;
+    width: 90px;
     cursor: pointer;
 
 }
@@ -52,12 +52,18 @@
     
 }
 
+.navbar .middle #h2
+{
+    font-size: 15px;
+    
+}
+
 .navbar .middle h2
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     cursor: pointer;
-    padding-bottom: 8px;
-    font-size: 18px;
+    padding-bottom: 6px;
+    font-size: 15px;
 
 }
 
@@ -70,10 +76,10 @@
 
 /* Stadium Section */
 
-.david
+.stadium
 {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 
 }
 
@@ -85,11 +91,11 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     width: fit-content;
     font-size: 22px;
     position: absolute;
-    margin: -210px 0 0 5%;
+    margin: -170px 0 0 5%;
 
 }
 
@@ -117,6 +123,248 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: fit-content;
     position: absolute;
-    margin: -200px 0 0 9%;
+    margin: -160px 0 0 9%;
+    
+}
+
+/* News_Heading */
+
+.news_heading h2
+{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px 5%;
+    border-radius: 5px;
+    margin-top: 2px;
+
+}
+
+/* feedback */
+.feedback
+{
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: fit-content;
+    font-size: 22px;
+    position: absolute;
+    margin: -170px 0 0 5%;
+
+}
+
+.feedback:hover + .content
+{
+    display: block;
+    
+}
+
+.content
+{
+    display: none;
+    
+}
+
+.content p
+{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: fit-content;
+    position: absolute;
+    margin: -160px 0 0 9%;
+    
+}
+
+/* text */
+
+.text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 5%;
+    text-align: center;
+    color: darkslategray;
+    font-family: cursive;
+
+}
+
+.text h1
+{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+
+.text h3
+{
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* phone responsiveness */
+
+.topnav_phone
+{
+    margin: 40px 5%;
+    position: fixed;
+    width: 90%;
+    
+}
+
+.navbar_phone
+{
+    background-color: rgba(0, 0, 0, 0.459);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.navbar_phone .left .logo_phone
+{
+    width: 85px;
+
+}
+
+.navbar_phone .left
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar_phone .left h2
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+
+}
+
+.navbar_phone .right
+{
+    margin-left: auto;
+
+}
+
+.topnav_phone .navbar .right h2:active
+{
+    transition: all 0.9s all;
+    transform: scale(0.90);
+    
+}
+
+.navbar_phone .right .dropdown_icon_phone
+{
+    cursor: pointer;
+
+}
+
+.navbar_phone .right .dropdown_phone
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin-left: -32px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    box-shadow: 0.5px 0.5px 20px black;
+
+}
+
+.navbar_phone .right .dropdown_phone h2
+{
+    border: 2px solid transparent;
+    width: 100%;
+    padding: 3px;
+
+}
+
+.tap_phone
+{
+    background-color: white;
+    color: black;
+    width: 100%;
+    border: 2px solid black;
+
+}
+
+/* stadium */
+
+.stadium_phone
+{
+    height: 80vh;
+
+}
+
+/* Feedback */
+
+.feedback_phone
+{
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: fit-content;
+    font-size: 20px;
+    position: absolute;
+    margin: -170px 0 0 5%;
+
+}
+
+.feedback_phone:hover + .content_phone
+{
+    display: block;
+    
+}
+
+.content_phone
+{
+    display: none;
+    
+}
+
+.content_phone p
+{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: fit-content;
+    position: absolute;
+    margin: -160px 0 0 15%;
     
 }
