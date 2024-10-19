@@ -212,26 +212,6 @@ const page = () => {
                     <div className="player-data">
                         <div className='one'>
                         <div className="player-name">
-                            <Image className='play' width={50} src={modric} alt='Luka Modric' />
-
-                            <h3>Luka Modric</h3>
-
-                            <h3>#10</h3>
-                        </div>
-
-                        <h3 className='play-pst'>Midfielder</h3>
-
-                        <h3 className='play-age'>39</h3>
-
-                        <p className='play-height'>5'7"</p>
-
-                        <h3 className='play-width'>66</h3>
-                        </div>
-                    </div>
-
-                    <div className="player-data">
-                        <div className='one'>
-                        <div className="player-name">
                             <Image className='play' width={50} src={kroos} alt='Toni Kroos' />
 
                             <h3>Valverde</h3>
